@@ -1,0 +1,89 @@
+body {
+    background: rgb(57, 57, 57);
+}
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: aliceblue;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #4f4f4f;
+  padding-left: 15px;
+}
+button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  /* background: #3a3838; */
+  opacity: 0;
+  cursor: pointer;
+}
+h1, h2, h3, h4, h5, p{
+    color: #f0f0f0;
+}
+.look-calendar {
+  width:220px;
+  border:1px;
+  padding:6px;
+  margin: 0 auto;    
+}
+#calendar {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+  border-spacing:0px;
+}
+#calendar tr.dn td {
+  font-size: 15px;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: #ffffff;
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color: #ffffff;
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar tbody td {
+  color: #4c7090;
+}
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
+  color: #e78c5c;
+}
+#calendar tbody td.today {
+  border: 1px solid #fff;
+  border-top: 1px solid #fff;
+  color: #fff;
+}
+.arrow-left {
+    margin: 20px 8px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.arrow-left polygon {
+    fill: #337AB7; 
+    transition: fill 0.5s ease-out;
+}
+.arrow-left {
+    transform: rotate(150deg);
+}
+.arrow-left:hover polygon {
+    fill: #BFE2FF;
+}
