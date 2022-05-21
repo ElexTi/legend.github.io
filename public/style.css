@@ -87,3 +87,16 @@ h1, h2, h3, h4, h5, p{
 .arrow-left:hover polygon {
     fill: #BFE2FF;
 }
+.dvt-1 {
+  width: 280px; 
+}
+@media screen and (min-height: 956px) {
+  .dvt-1 {
+    height: 957px;
+  }
+}
+@media screen and (max-height: 578px) {
+  .dvt-1 {
+    height: 577px;
+  }
+}
